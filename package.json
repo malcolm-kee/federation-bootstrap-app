@@ -1,0 +1,26 @@
+{
+  "name": "federation-bootstrap-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "start": "cross-env NODE_ENV=development webpack serve --mode development --env development",
+    "dev": "cross-env NODE_ENV=development webpack serve --mode development --env development"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^9.0.0",
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "federations": {
+    "name": "bootstrap"
+  }
+}
